@@ -1,0 +1,11 @@
+{
+  "name": "lubna-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio of Lubna Qurrotu A’yunin: Jurassic library theme",
+  "scripts": {
+    "dev": "node server.js --dev",
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}
