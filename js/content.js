@@ -19,14 +19,14 @@ const PROFILE_PHOTO = "";  // e.g. "assets/foto.jpg". Empty = shows the initials
 /* =====================================================================
    2) ATTACH YOUR ORIGINAL FILES TO EACH WORK OVERLAY
    For every work id (see the WORKS list below) you may set:
-     embed  : a public URL to show inside the overlay. Supported:
-              - Google Slides "Publish to web" embed URL  (https://docs.google.com/presentation/d/.../embed)
-              - a PDF  (assets/electrical.pdf)
-              - a .pptx hosted online (shown through the Office viewer)
-     images : photos for the swipeable frame, in order. Photo 1 goes with slide 01, photo 2 with slide 02, ...
-              (["assets/trk/1.jpg","assets/trk/2.jpg"]). The numbered caption below the frame changes with each photo.
-              Missing photos show an icon placeholder.
-     links  : [{label:"Demo", url:"https://..."}, {label:"GitHub", url:"https://..."}]
+      embed  : a public URL to show inside the overlay. Supported:
+             - Google Slides "Publish to web" embed URL  (https://docs.google.com/presentation/d/.../embed)
+             - a PDF  (assets/electrical.pdf)
+             - a .pptx hosted online (shown through the Office viewer)
+      images : photos for the swipeable frame, in order. Photo 1 goes with slide 01, photo 2 with slide 02, ...
+             (["assets/trk/1.jpg","assets/trk/2.jpg"]). The numbered caption below the frame changes with each photo.
+             Missing photos show an icon placeholder.
+      links  : [{label:"Demo", url:"https://..."}, {label:"GitHub", url:"https://..."}]
    Leave empty and the overlay shows the content slides written below.
    ===================================================================== */
 const FILES = {
@@ -93,7 +93,7 @@ const WORKS = [
       img: "assets/4gsa.jpeg"
     }
   ] 
-}, // <-- Pastikan ada koma di sini sebelum objek item berikutnya (seperti id:"trk")
+},
 { id:"trk", cat:"exp", kind:"Study Program Committee", icon:"🖥️",
   title:"Public Relations, Study Program Committee (TRK)", org:"Computer Engineering Technology, IPB University", period:"Dec 2025 – May 2026",
   summary:"As a member of the Engineering Computer Technology committee, I supported the control of study program activities together with the Head of Study Program and the Head of Faculty, serving as Public Relations.",
@@ -109,7 +109,7 @@ const WORKS = [
         "Support study program activities with the Head of Study Program and the Head of Faculty",
         "Public Relations of the Study Program Committee"
       ],
-      img: "assets/1tek.jpeg" // <-- Ganti dengan nama file foto untuk slide Mandate
+      img: "assets/1tek.jpeg"
     },
     {
       t: "Responsibilities", 
@@ -118,7 +118,7 @@ const WORKS = [
         "Official publications and announcements",
         "Event documentation"
       ],
-      img: "assets/2tek.jpeg" // <-- Ganti dengan nama file foto untuk slide Responsibilities
+      img: "assets/2tek.jpeg"
     },
     {
       t: "Project Officer, IPB Gathering", 
@@ -126,7 +126,7 @@ const WORKS = [
         "January – March 2026",
         "55 committee members led"
       ],
-      img: "assets/3tek.png" // <-- Ganti dengan nama file foto untuk slide IPB Gathering
+      img: "assets/3tek.png"
     },
     {
       t: "Learning outcomes", 
@@ -134,7 +134,7 @@ const WORKS = [
         "Soft skills: team work and time management",
         "Hard skills: WordPress, Excel, Canva, Notion"
       ],
-      img: "assets/4tek.png" // <-- Ganti dengan nama file foto untuk slide Learning outcomes
+      img: "assets/4tek.png"
     }
   ] 
 }, 
@@ -150,17 +150,17 @@ const WORKS = [
     {
       t: "Leadership development", 
       b: ["Young Pioneer program", "Mentoring I, II, and III completed"],
-      img: "assets/foto-lead1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-lead1.jpeg"
     },
     {
       t: "Program contributions", 
       b: ["Vice Chair, Organizing Committee, Cabinet Mahakarsa Demissioner 2025", "Public Relations Officer, Cabinet Meeting III 2025"],
-      img: "assets/foto-lead2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-lead2.jpeg"
     },
     {
       t: "Competencies gained", 
       b: ["Soft skills: team work, time management, collaboration, leadership", "Hard skills: Excel, Canva, Notion"],
-      img: "assets/foto-lead3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-lead3.jpeg"
     }
   ]
 },
@@ -178,7 +178,7 @@ const WORKS = [
         "Empowering youth through community service",
         "Education, community building, and social projects"
       ],
-      img: "assets/foto-org1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-org1.jpeg"
     },
     {
       t: "Role", 
@@ -186,7 +186,7 @@ const WORKS = [
         "Creative Media Staff and copywriter",
         "10+ social media copy contents created"
       ],
-      img: "assets/foto-org2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-org2.jpeg"
     },
     {
       t: "Competencies", 
@@ -194,7 +194,7 @@ const WORKS = [
         "Soft skills: team work, writing, humanity",
         "Hard skills: Microsoft Excel"
       ],
-      img: "assets/foto-org3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-org3.jpeg"
     }
   ]
 },
@@ -211,7 +211,7 @@ const WORKS = [
       b: [
         "A supportive companion for knowledge, education, and character"
       ],
-      img: "assets/foto-comm1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-comm1.jpeg"
     },
     {
       t: "Inclusive education", 
@@ -221,7 +221,7 @@ const WORKS = [
         "Individuals with mental health conditions",
         "Senior citizens"
       ],
-      img: "assets/foto-comm2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-comm2.jpeg"
     },
     {
       t: "Partnerships", 
@@ -229,10 +229,10 @@ const WORKS = [
         "Maintained relationships with social partners",
         "Expanded professional networks"
       ],
-      img: "assets/foto-comm3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-comm3.jpeg"
     }
   ]
-}, // <-- Penutup objek proyek ini, diikuti koma jika masih ada proyek lain di bawahnya
+},
 { id:"fos", cat:"exp", kind:"Youth Organization", icon:"👩‍💼",
   title:"Secretary of Public Relations Division, FOS DKI Jakarta", org:"Forum OSIS DKI Jakarta (@fosdkijakarta)", period:"Mar 2024 – Apr 2025",
   summary:"Forum OSIS DKI Jakarta houses OSIS/MPK administrators of senior high schools in Jakarta and develops them as role models and Agents of Change. I was selected as one of 35 from 800+ candidates.",
@@ -248,7 +248,7 @@ const WORKS = [
       b: [
         "35 selected from 800+ Agents of Change candidates"
       ],
-      img: "assets/foto-aoc1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-aoc1.jpeg"
     },
     {
       t: "Public Relations", 
@@ -256,7 +256,7 @@ const WORKS = [
         "Internal communications coordination",
         "Collaboration with the Head of Public Relations"
       ],
-      img: "assets/foto-aoc2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-aoc2.jpeg"
     },
     {
       t: "Event leadership", 
@@ -265,7 +265,7 @@ const WORKS = [
         "PESTAVIA: 1500+ participants",
         "Student Youth Project: 700 participants"
       ],
-      img: "assets/foto-aoc3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-aoc3.jpeg"
     },
     {
       t: "Competencies", 
@@ -273,10 +273,10 @@ const WORKS = [
         "Soft skills: team work, time management, leadership",
         "Hard skills: Excel, Canva, WordPress"
       ],
-      img: "assets/foto-aoc4.jpeg" // <-- Ganti dengan nama file foto slide 4
+      img: "assets/foto-aoc4.jpeg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"osis", cat:"exp", kind:"School Organization", icon:"📋",
   title:"Human Resources Secretary, OSIS SMA Negeri 26 Jakarta", org:"OSIS SMAN 26 Jakarta", period:"High school tenure",
   summary:"Supported administrative operations during leadership regeneration programs, including scheduling, participant data management, and the selection and evaluation of new members.",
@@ -292,7 +292,7 @@ const WORKS = [
         "Leadership regeneration administration",
         "Scheduling and participant data management"
       ],
-      img: "assets/foto-scope1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-scope1.jpeg"
     },
     {
       t: "Outputs", 
@@ -300,7 +300,7 @@ const WORKS = [
         "Formal documentation and official invitations",
         "Leadership succession records"
       ],
-      img: "assets/foto-scope2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-scope2.jpeg"
     },
     {
       t: "Competencies", 
@@ -308,10 +308,10 @@ const WORKS = [
         "Soft skills: team work, time management, leadership",
         "Hard skills: Excel, Notion, WordPress"
       ],
-      img: "assets/foto-scope3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-scope3.jpeg"
     }
   ]
-}, // <-- Penutup objek proyek ini, diikuti koma jika masih ada proyek lain di bawahnya
+},
 
 /* ----------------------------- PROJECTS ----------------------------- */
 { id:"senada", cat:"proj", sub:"software", kind:"Software and Web", icon:"🎤",
@@ -325,7 +325,7 @@ const WORKS = [
       b: [
         "Concerts are rarely designed with persons with disabilities in mind"
       ],
-      img: "assets/foto-senada1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-senada1.jpeg"
     },
     {
       t: "Solution", 
@@ -333,17 +333,17 @@ const WORKS = [
         "A social-based platform for inclusive concerts",
         "Administrator dashboard and user management"
       ],
-      img: "assets/foto-senada2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-senada2.jpeg"
     },
     {
       t: "Role", 
       b: [
         "Full-stack developer"
       ],
-      img: "assets/foto-senada3.png" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-senada3.png"
     }
   ]
-}, // <-- Penutup objek proyek ini, diikuti koma jika masih ada proyek lain di bawahnya
+},
 { id:"mood", cat:"proj", sub:"software", kind:"Software and Web", icon:"📝",
   title:"MoodNotes", org:"Multi-user microblogging application", period:"CRUD project",
   summary:"A multi-user text application in the style of microblogging, enabling users to post content and interact within a shared system environment with CRUD operations (Create, Read, Update, Delete).",
@@ -355,7 +355,7 @@ const WORKS = [
       b: [
         "Microblogging for moods and short notes"
       ],
-      img: "assets/foto-concept.jpg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-concept.jpg"
     },
     {
       t: "Features", 
@@ -363,17 +363,17 @@ const WORKS = [
         "Create, read, update, delete posts",
         "Multi-user interaction"
       ],
-      img: "assets/foto-features.jpg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-features.jpg"
     },
     {
       t: "Role", 
       b: [
         "Developer, end-to-end"
       ],
-      img: "assets/foto-role.jpg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-role.jpg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"game", cat:"proj", sub:"software", kind:"Software and Web", icon:"🎮",
   title:"Game Development", org:"Iconlab UNNES 2026", period:"2026",
   summary:"Awarded 1st Place at Iconlab UNNES 2026 Game Development (GameDev) Competition. Responsible for end-to-end development, including game logic programming, UI/UX design, game design documentation, and mechanics implementation",
@@ -385,17 +385,17 @@ const WORKS = [
       b: [
         "Game Development Competition, Iconlab UNNES 2026"
       ],
-      img: "assets/foto-competition1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-competition1.jpeg"
     },
     {
       t: "Result", 
       b: [
         "First Place"
       ],
-      img: "assets/foto-competition2.jpg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-competition2.jpg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"hybe", cat:"proj", sub:"network", kind:"Networking", icon:"🌐",
   title:"Enterprise Network “Hybe”", org:"Cisco simulation", period:"2025",
   summary:"Engineered and simulated a complex multi-division enterprise network topology for 'Hybe' Label using Cisco Packet Tracer across four distinct functional zones (Music, Video, Label, and Agency). Designed a robust dual-stack IPv4/IPv6 addressing scheme utilizing VLSM, configured centralized dynamic routing protocols, implemented granular network segmentation, and established stringent device access security and ACLs.",
@@ -407,7 +407,7 @@ const WORKS = [
       b: [
         "Divisions: Music, Video, Label, Agency"
       ],
-      img: "assets/foto-topology1.jpg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-topology1.jpg"
     },
     {
       t: "Techniques", 
@@ -417,17 +417,17 @@ const WORKS = [
         "Centralized routing",
         "Device access security"
       ],
-      img: "assets/foto-topology2.jpg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-topology2.jpg"
     },
     {
       t: "Context", 
       b: [
         "Cisco CCNA: Networking and Introduction to Network (2025)"
       ],
-      img: "assets/foto-topology3.jpg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-topology3.jpg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"bluzone", cat:"proj", sub:"network", kind:"Social Innovation", icon:"💙",
   title:"BLUZONE", org:"Markoding Digital Innovation Challenge", period:"2021",
   summary:"A digital mental health product concept and high-fidelity prototype designed to support bullying survivors. Formulated through human-centered design thinking, featuring a daily mood tracker concept, audio-based emotional regulation tools, and an anonymous sharing space. Recognized as a National Finalist at Markoding 2021.",
@@ -439,7 +439,7 @@ const WORKS = [
       b: [
         "Survivors of bullying lack safe digital spaces"
       ],
-      img: "assets/foto-problem1.jpg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-problem1.jpg"
     },
     {
       t: "Features", 
@@ -448,17 +448,17 @@ const WORKS = [
         "Music for emotional regulation",
         "Confidential story space"
       ],
-      img: "assets/foto-problem2.jpg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-problem2.jpg"
     },
     {
       t: "Recognition", 
       b: [
         "National Finalist, Markoding 2021"
       ],
-      img: "assets/foto-problem3.jpg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-problem3.jpg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"electrical", cat:"proj", sub:"slides", kind:"Presentation", icon:"⚡",
   title:"Electrical Engineering Presentation", org:"Slide deck", period:"Academic work",
   summary:"Led the end-to-end engineering of hardware security and automation systems, including 'SecureBox'—a microcontroller-free residential security unit using TTL digital logic gates and magnetic reed switches. Independently designed electronic circuit architecture, executed PCB/breadboard soldering, and integrated LDR sensor-driven automation for Smart Environmental Lighting.",
@@ -470,17 +470,17 @@ const WORKS = [
       b: [
         "Open the original deck through the viewer once attached"
       ],
-      img: "assets/foto-ee1.jpg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-ee1.jpg"
     },
     {
       t: "Result", 
       b: [
         "Role as project leader"
       ],
-      img: "assets/foto-ee2.jpg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-ee2.jpg"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 
 /* ------------------------------- ARTS ------------------------------- */
 { id:"content", cat:"cre", kind:"Creative Content", icon:"📱",
@@ -494,150 +494,42 @@ const WORKS = [
       b: [
         "The tech industry needs new talent, yet graduates experience a skills gap"
       ],
-      img: "assets/foto-paradox1.jpeg" // <-- Ganti dengan nama file foto slide 1
+      img: "assets/foto-paradox1.jpeg"
     },
     {
       t: "Evidence", 
       b: [
         "A 2025 F1000Research journal on AI-assisted skills mapping and student confidence"
       ],
-      img: "assets/foto-paradox2.jpeg" // <-- Ganti dengan nama file foto slide 2
+      img: "assets/foto-paradox2.jpeg"
     },
     {
       t: "Outcome", 
       b: [
         "From career anxiety to a clear and directed roadmap"
       ],
-      img: "assets/foto-paradox3.jpeg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/foto-paradox3.jpeg"
     }
   ]
-}, // <-- Penutup objek proyek ini
-{ id:"comic", cat:"cre", kind:"Digital Comic", icon:"💬",
-  title:"Digital Comic: Pancasila and Human Rights", org:"Educational comic", period:"Academic work",
-  summary:"An educational digital comic on applying Pancasila values and human rights in everyday life, narrated through a student character named Adit.",
-  highlights:["Developed the narrative and panel structure around mutual respect and anti-bullying.","Designed the visual layout for social media format."],
-  skills:["Storytelling","Visual design","Civic education"],
-  slides: [
-    {
-      t: "“Halo, Saya Adit!”", 
-      b: [
-        "Introduction to a student character in a school setting"
-      ],
-      img: "assets/foto-adit1.jpg" // <-- Ganti dengan nama file foto slide 1
-    },
-    {
-      t: "Theme", 
-      b: [
-        "Mutual respect and the rejection of bullying"
-      ],
-      img: "assets/foto-adit2.jpg" // <-- Ganti dengan nama file foto slide 2
-    },
-    {
-      t: "Format", 
-      b: [
-        "Four-part comic designed for social media"
-      ],
-      img: "assets/foto-adit3.jpg" // <-- Ganti dengan nama file foto slide 3
-    }
-  ]
-}, // <-- Penutup objek proyek ini
-{ id:"design", cat:"cre", kind:"Design Archive", icon:"🖼️",
-  title:"Design Archives", org:"Visual communication", period:"2022 – 2026",
-  summary:"A visual archive of personal and academic designs: a college introduction story, a personal profile, a personal-mission layout, and a reflective “Path I Choose” spread inspired by Start with Why.",
-  highlights:["Composed layouts in a scrapbook and collage aesthetic.","Combined personal reflection with structured typographic hierarchy."],
-  skills:["Canva","Layout design","Visual storytelling"],
-  slides: [
-    {
-      t: "College story", 
-      b: [
-        "A story-format introduction to university life"
-      ],
-      img: "assets/foto-college1.jpg" // <-- Ganti dengan nama file foto slide 1
-    },
-    {
-      t: "Personal profile and mission", 
-      b: [
-        "Profile layout and personal mission statement"
-      ],
-      img: "assets/foto-college2.jpg" // <-- Ganti dengan nama file foto slide 2
-    },
-    {
-      t: "Path I Choose", 
-      b: [
-        "A reflective spread inspired by Start with Why"
-      ],
-      img: "assets/foto-college3.jpg" // <-- Ganti dengan nama file foto slide 3
-    }
-  ]
-}, // <-- Penutup objek proyek ini
-{ id:"infographic", cat:"cre", kind:"Infographics", icon:"📊",
-  title:"Infographics", org:"Educational visual communication", period:"2025",
-  summary:"Three infographics: Pancasila values in Bogor’s struggle for independence, the Dream Book personal profile, and a food-crisis awareness series promoting urban farming.",
-  highlights:["Traced Pancasila values through the events of Bojongkokosan, Gekbrong-Jambudipa, Maseng, and Palagan Kapten Muslihat.","Explained the food crisis and the role of urban farming through the memorable acronym K-R-I-S-I-S.","Produced a Dream Book to present personal aspirations."],
-  skills:["Research","Data visualization","Canva"],
-  slides: [
-    {
-      t: "Pancasila in Bogor’s Struggle", 
-      b: [
-        "Museum Perjuangan Bogor",
-        "Bojongkokosan, Gekbrong-Jambudipa, Maseng, Palagan Kapten Muslihat",
-        "Conclusion: Pancasila was already practiced before it was formalized"
-      ],
-      img: "assets/foto-pancasila1.jpg" // <-- Ganti dengan nama file foto slide 1
-    },
-    {
-      t: "Waspada Krisis Pangan", 
-      b: [
-        "What is a food crisis?",
-        "Urban farming as an adaptive response",
-        "Action points summarized as K-R-I-S-I-S"
-      ],
-      img: "assets/foto-pangan2.jpg" // <-- Ganti dengan nama file foto slide 2
-    },
-    {
-      t: "Dream Book", 
-      b: [
-        "The face behind the star: a personal aspirations spread"
-      ],
-      img: "assets/foto-dreambook3.jpg" // <-- Ganti dengan nama file foto slide 3
-    }
-  ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"copy", cat:"cre", kind:"Copywriting", icon:"✍️",
-  title:"Copywriting: R.I.S.E. Mangrove", org:"FOS DKI Jakarta", period:"Feb 2024",
-  summary:"Complete communication set for “Restoration Through Implementation Sustainable and Environmental Mangrove,” held on 11 February 2024 at the Mangrove Ecotourism Area, PIK, North Jakarta.",
-  highlights:["Open-registration broadcast with benefits and registration details.","Formal invitation letter to schools.","Teaser, logo-meaning, and “Get Closer with R.I.S.E.” social media captions."],
+  title:"Copywriting", org:"FOS DKI Jakarta", period:"2024-2025",
+  summary:"Crafting a comprehensive communication set and public messaging framework for all official events under FOS DKI Jakarta. Directed campaign storytelling, formal correspondence, and promotional narratives.",
+  highlights:["Open-registration broadcast with benefits and registration details.","Formal invitation letter to schools.","Teaser, logo-meaning, and “Get Closer with event” social media captions."],
   skills:["Copywriting","Formal letter writing","Campaign storytelling"],
   slides: [
     {
-      t: "Open registration", 
+      t: "some copywriting examples", 
       b: [
-        "Persuasive call to action for young people in Jakarta",
-        "Registration: 4–10 February 2024"
+        "Persuasive call to action for young people",
       ],
-      img: "assets/foto-reg1.jpg" // <-- Ganti dengan nama file foto slide 1
-    },
-    {
-      t: "Formal invitation", 
-      b: [
-        "Official letter format for schools",
-        "Event: Sunday, 11 February 2024"
-      ],
-      img: "assets/foto-reg2.jpg" // <-- Ganti dengan nama file foto slide 2
-    },
-    {
-      t: "Social campaign", 
-      b: [
-        "Teaser, logo meaning, and Get Closer with R.I.S.E.",
-        "Hashtags: #AgentOfChange, #RISEMangrove"
-      ],
-      img: "assets/foto-reg3.jpg" // <-- Ganti dengan nama file foto slide 3
+      img: "assets/copywriting.png"
     }
   ]
-}, // <-- Penutup objek proyek ini
+},
 { id:"book", cat:"cre", kind:"Authorship", icon:"📖",
   title:"Authorship", org:"Guepedia and Gramedia", period:"2021 · 2024",
-  summary:"Author of the book “Should I Stay? Or Move?” (Guepedia and Gramedia, 2021) and Favorite Winner of the Sohib Komdigi article competition in 2024.",
+  summary:"Author of the book “Should I Stay? Or Move?” (Guepedia and Gramedia, 2021) and Favorite Winner of the Sohib Komdigi article competition in 2024 and first place motlet competition.",
   highlights:["Published as a book author in 2021.","Recognized as Favorite Winner of the Sohib Komdigi article competition (2024)."],
   skills:["Writing","Research","Storytelling"],
   slides: [
@@ -646,70 +538,144 @@ const WORKS = [
       b: [
         "Published by Guepedia and Gramedia, 2021"
       ],
-      img: "assets/foto-book1.jpg" // <-- Ganti dengan nama file foto slide 1 (cover buku/publikasi)
+      img: "assets/foto-book1.jpeg"
     },
     {
       t: "Recognition", 
       b: [
         "Favorite Winner, Sohib Komdigi article competition, 2024"
       ],
-      img: "assets/foto-award2.jpg" // <-- Ganti dengan nama file foto slide 2 (sertifikat/penghargaan)
-    }
-  ]
-}, // <-- Penutup objek proyek ini
-{ id:"choir", cat:"cre", kind:"Performance", icon:"🎶",
-  title:"Choir", org:"Bali International Choir Festival", period:"2021",
-  summary:"Gold medalist at the Bali International Choir Festival 2021.",
-  highlights:["Performed as a choir member in an international festival.","Awarded the gold medal."],
-  skills:["Vocal performance","Teamwork"],
-  slides: [
+      img: "assets/foto-award2.jpg"
+    },
     {
-      t: "Gold Medal",
-      b: ["Bali International Choir Festival 2021"],
-      img: "assets/foto-choir1.jpg" // <-- Ganti dengan nama file foto slide 1
+      t: "Recognition", 
+      b: [
+        "1st Place, Motlet competition, National level"
+      ],
+      img: "assets/foto-award3.jpg"
     }
   ]
 },
-{ id:"tilawah", cat:"cre", kind:"Qur’anic Recitation", icon:"🕌",
-  title:"Tilawah", org:"MHQ competitions", period:"2020",
-  summary:"Third Place in the provincial MHQ and Second Place in the municipal MHQ in 2020.",
-  highlights:["Third Place, provincial level.","Second Place, municipal level."],
-  skills:["Recitation","Discipline"],
+{
+  id: "mendengar-jiwa",
+  cat: "cre",
+  kind: "Public Speaking",
+  icon: "🎤",
+  title: "Public Speaking & Mental Health Advocate",
+  org: "Yayasan BUMN x Menjadi Manusia",
+  period: "2024",
+  summary: "Selected talent lineup at Mendengar Jiwa (World Mental Health Day), delivering a speech on youth mental health and parental expectations in front of 1,000+ attendees and public figures.",
+  highlights: [
+    "Delivered 'Speech Keresahan' about expectations & youth mental health.",
+    "Featured talent alongside Erick Thohir, Prilly Latuconsina, and Ariel Tatum.",
+    "Received heart-shaped appreciation plaque from Yayasan BUMN."
+  ],
+  skills: ["Public Speaking", "Storytelling", "Advocacy", "Mental Health"],
   slides: [
     {
-      t: "MHQ 2020",
-      b: ["Third Place: province", "Second Place: city"],
-      img: "assets/foto-tilawah1.jpg" // <-- Ganti dengan nama file foto slide 1
-    }   
-  ]},
-
-/* ---------------------------- LEADERSHIP ---------------------------- */
-{ id:"speaking", cat:"lead", kind:"Public Speaking", icon:"🎙️",
-  title:"Public Speaking", org:"National and regional forums", period:"2024 – 2025",
-  summary:"Experienced public speaker and moderator across high-profile national and regional forums. Proven capability in engaging large-scale audiences of over 500 participants, directing flow as a Master of Ceremony, and facilitating impactful panel discussions with clarity and confidence.",
+      t: "Speech Keresahan",
+      b: [
+        "Delivering speech on stage for Mendengar Jiwa event"
+      ],
+      img: "assets/foto-speech1.jpg"
+    },
+    {
+      t: "Stage Recognition",
+      b: [
+        "Honored with heart-shaped plaque from Yayasan BUMN"
+      ],
+      img: "assets/foto-speech2.jpg"
+    },
+    {
+      t: "Mendengar Jiwa Lineup",
+      b: [
+        "On stage with Erick Thohir and event speakers"
+      ],
+      img: "assets/foto-speech3.jpg"
+    }
+  ]
+},
+{ id:"speaking", cat:"lead", kind:"Public Speaking & Moderating", icon:"🎙️",
+  title:"High-Profile Moderating & Public Speaking", org:"FOS DKI Jakarta & BELFOS 4.0", period:"2024 – 2025",
+  summary:"Served as a moderator for high-profile leadership discussions featuring prominent figures such as Anies Baswedan and Governor-Vice Governor DKI Jakarta Candidates (PESTAVIA 2024).",
   highlights:[
-    "Moderator of a national leadership forum with 500+ OSIS chairpersons in Jakarta, featuring Anies Baswedan (January 2025).",
-    "Moderator of the Governor and Vice Governor Candidate Session with 1,000+ participants, featuring Kun Wardana (PESTAVIA, November 2024).",
-    "Master of Ceremony and speaker at multiple organizational and youth events.",
-    "Facilitator of educational and community-based discussions."],
-  skills:["Moderation","Master of Ceremony","High Communication","Public Speaking"],
-  slides:[
-    {t:"National leadership forum", b:["500+ OSIS chairpersons in Jakarta","Featuring Anies Baswedan"]},
-    {t:"Governor–Vice Governor candidate session", b:["1,000+ participants","Featuring Kun Wardana"]},
-    {t:"Other roles", b:["Master of Ceremony and speaker","Facilitator of community-based discussions"]}
-  ]},
-{ id:"leadership", cat:"lead", kind:"Leadership", icon:"🧭",
-  title:"Leadership and Teamwork", org:"Cross-functional, large-scale projects", period:"2022 – 2026",
-  summary:"Directed and collaborated within cross-functional teams across multiple large-scale student initiatives from 2022 to 2026. Spearheaded project operations, coordinated stakeholder engagement, and streamlined team workflows to successfully deliver programs and strategic goals",
+    "Moderated a leadership discussion featuring Anies Baswedan (BELFOS 4.0) with 500+ student council leaders, translating complex governance topics into relatable insights.",
+    "Served as Moderator for the Governor-Vice Governor DKI Jakarta Candidate Session (Paslon 2) during PESTAVIA 2024 with structured dialogue.",
+    "Collaborated with PR teams to secure media partnerships and coverage across national outlets (ANTARA, Tempo, CNN, MetroTV, TVOne, TVRI)."
+  ],
+  skills:["Public Speaking","Moderation","Leadership Discussion","Media Relations"],
+  slides: [
+    {
+      t: "BELFOS 4.0 with Anies Baswedan",
+      b: [
+        "Moderated high-profile discussion for 500+ student leaders",
+        "Translated complex leadership and globalization topics into engaging dialogues"
+      ],
+      img: "assets/foto-speaking1.jpg"
+    },
+    {
+      t: "Governor Candidate Session (PESTAVIA)",
+      b: [
+        "Moderated Governor-Vice Governor DKI Jakarta Candidate Session (Paslon 2)",
+        "Structured dialogue and audience engagement for 1,000+ participants"
+      ],
+      img: "assets/foto-speaking2.jpg"
+    },
+    {
+      t: "FOS Gathering 2024",
+      b: [
+        "Moderated public figure for 300+ student leaders",
+      ],
+      img: "assets/foto-speaking3.jpg"
+    },
+    {
+      t: "FOS Goes to School 2024",
+      b: [
+        "Presented leadership insights to a hundred students across Jakarta",
+      ],
+      img: "assets/foto-speaking4.jpg"
+    }
+  ]
+},
+{ id:"leadership", cat:"lead", kind:"Leadership & Social Impact", icon:"⭐",
+  title:"Leadership Journey & Community Impact", org:"FOS DKI Jakarta & Social Initiatives", period:"2021 – 2026",
+  summary:"Extensive experience managing large-scale youth organizations, leading multi-member committees, and driving impactful social innovation and volunteer campaigns.",
   highlights:[
-    "Project Officer, IPB University Gathering: led 55 committee members.",
-    "Vice Project Officer, Student Youth Project: 700 participants (600 offline, 100 online).",
-    "Project Lead, Community Service Program: led 38 volunteers.",
-    "Vice Project Officer, BEM SV IPB Demissioner Program: 300 participants.",
-    "Head of Division roles in FOS DKI Jakarta programs (FOSGAT, PESTAVIA, Student Youth Project) with 1,000–1,500+ participants."],
-  skills:["Project management","Coordination","Team productivity","Program execution"],
-  slides:[
-    {t:"Scale of responsibility", b:["55 committee members","38 volunteers","700, 300, and 1,000–1,500+ participants"]},
-    {t:"Outcomes", b:["Smooth execution with minimal miscommunication","Improved team productivity and coordination","Program targets achieved effectively"]}
-  ]}
+    "Served as Deputy Chair (Vice Project Officer) for the Student Youth Project 2024, driving 700 students across technology education and environmental health initiatives.",
+    "Contributed to Amgala Foundation delivering social services and DIY science games for 50+ orphaned children.",
+    "Assisted basic health screenings and public health awareness for 200+ residents in Cikini with CIMSA FK UI."
+  ],
+  skills:["Leadership","Project Management","Community Development","Social Innovation"],
+  slides: [
+    {
+      t: "Student Youth Project 2024",
+      b: [
+        "Deputy Chair overseeing 700 students across DKI Jakarta",
+        "Led SDG-focused tech education bootcamps and pollution-prevention campaigns"
+      ],
+      img: "assets/foto-leadership1.jpg"
+    },
+    {
+      t: "Tekom",
+      b: [
+        "Project Officer for TEK Gathering 2025",
+      ],
+      img: "assets/foto-leadership2.jpg"
+    },
+    {
+      t: "NYP",
+      b: [
+        "Project Officer for Inclusive Education 2024",
+      ],
+      img: "assets/foto-leadership3.jpg"
+    },
+    {
+      t: "Amgala Foundation",
+      b: [
+        "Social Projects: DIY science games for 50+ orphaned children",
+      ],
+      img: "assets/foto-leadership4.jpg"
+    }
+  ]
+}
 ];
